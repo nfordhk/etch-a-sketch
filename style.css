@@ -1,6 +1,8 @@
 /* https://www.developerdrive.com/how-to-create-a-css-grid-step-by-step/ */
 /* https://medium.com/cloudaper/how-to-create-a-flexible-square-grid-with-css-grid-layout-ea48baf038f3 */
 
+@font-face { font-family: DrawingGuides; src: url('fonts/Drawing-Guides.ttf'); } 
+
 body {
     background-color: #f2fcf5;
 }
@@ -8,31 +10,29 @@ body {
 h1 {
     display: flex;
     justify-content: center;
-    font-size: 3em;
+    font-size: 5em;
     margin-top: 50px;
     margin-left: 30px;
-    font-family: 'Arial';
+    font-family: 'DrawingGuides';
     margin-bottom: 25px;
 }
 
 .container {
-    width: 800px;
-    height: 800px;
+    width: 600px;
+    height: 600px;
     display: grid;
     margin: auto;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(6, 1fr);
-    /*grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
-    grid-gap: 1rem;
-    */
     border: 4px solid #1cd080;
     border-radius: 5px;
   }
 
 .grid-item {
     text-align: center;
-    padding: 4rem;
+    /*border: 1px solid #1cd080;  */
   }
+
 
 button {
     display: block;
