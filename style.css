@@ -22,8 +22,8 @@ h1 {
     height: 600px;
     display: grid;
     margin: auto;
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(6, 1fr);
+    grid-template-columns: repeat(64, 1fr);
+    grid-template-rows: repeat(64, 1fr);
     border: 4px solid #1cd080;
     border-radius: 5px;
   }
@@ -48,6 +48,7 @@ button {
     text-align: center;
     font-size: 18px;
     opacity: 70%;
+    outline:none
 }
 
 button:hover {
