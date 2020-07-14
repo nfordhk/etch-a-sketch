@@ -1,13 +1,11 @@
 const container = document.querySelector('.container');
 
-//style.gridTemplateRows 
 function createCSSGrid(size) {
-    //container.style.gridTemplateColumns = repeat()
     container.style.gridTemplateColumns = `repeat(${size}, 1fr`;
     container.style.gridTemplateRows = `repeat(${size}, 1fr)`;  
 }
-//================================================================================
-//create the grid
+
+//create the first grid
 function createDivs (gridSize) {
     for (let i=0; i < gridSize ** 2; i++) {
         const div = document.createElement('div');
@@ -15,9 +13,8 @@ function createDivs (gridSize) {
         container.appendChild(div);
     }  
 }
-createDivs(64) //12 is the default
-//================================================================================
-//newGrid button
+createDivs(64) //64 is the default
+
 function newGrid () {
     const newGridButton = document.querySelector('.new_grid_button');
     newGridButton.addEventListener('click', () => {
@@ -28,7 +25,7 @@ function newGrid () {
     })
 }
 newGrid()
-//================================================================================
+
 //changeDivsColor changes the DIVs color during mouseover event
 function changeDivsColor () {
     const divColor = document.querySelectorAll('.grid-item')
@@ -40,16 +37,14 @@ function changeDivsColor () {
     })
 }
 changeDivsColor()
-//================================================================================
-//resetGrid for when a new grid is created
+
 function resetGrid () {
     const divColor = document.querySelectorAll('.grid-item')
     divColor.forEach (div => {
         div.style.backgroundColor = 'rgb(' + 242 + ',' + 252 + ',' + 245 + ')';
     })
 }
-//================================================================================
-//clearGrid button
+
 function clearGrid () {
     const clearButton = document.querySelector('.clear_button')
     clearButton.addEventListener('click', () => {
