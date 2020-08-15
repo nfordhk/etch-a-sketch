@@ -5,3 +5,5 @@ From The Odin Project's [curriculum](https://www.theodinproject.com/courses/web-
 
 # live-demo
 https://nfordhk.github.io/etch-a-sketch
+
+![Live Demo](images/etch-a-sketch-demo.gif)
